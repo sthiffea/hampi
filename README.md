@@ -39,7 +39,14 @@
 - ```sudo raspi-config```
     - Change hostname to hampi
     - Enable VNC (Under Interfacing Options)
-    - Change resolution to 1280x720 (Under Advanced Options, Screen Resolution)
+    - Exit
+- ```sudo vi /boot/config.txt```
+    ```
+    disable_overscan=1
+
+    hdmi_group=2
+    hdmi_mode=47
+    ```
 - Reboot
 ---
 ## Connect VNC and configure a few things
@@ -52,3 +59,5 @@
     - Change User password
     - Select Wifi Network
     - Restart
+- Preference, Screen configuration, use full screen resolution
+- In RealVNC menu, under Licensing... configure cloud connection
