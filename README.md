@@ -70,6 +70,12 @@
     - Use ```git add <filename>``` to add new files
     - Use git push to upload to github
 ---
+## Stuff
+- Set background to the image in hampi
+---
+## FLRig
+- ```sudo apt-get install -y flrig```
+---
 ## JS8Call
 - ```sudo apt install libgfortran3 libqt5multimedia5 libqt5multimedia5-plugins libqt5multimediagsttools5 libqt5multimediaquick5 libqt5multimediawidgets5 libqt5qml5 libqt5quick5```
 - ```wget http://files.js8call.com/2.2.0/js8call_2.2.0_armhf.deb```
