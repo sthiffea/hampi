@@ -1,4 +1,4 @@
-# This is how I build my Raspberry Pi 4 for ham use:
+# aThis is how I build my Raspberry Pi 4 for ham use:
 
 ## Flash Raspbian Image
 
