@@ -66,5 +66,13 @@
 - ```git config --global user.name "Simon"```\
 ```git config --global user.email "stiffo@gmail.com"```
 - git clone https://github.com/sthiffea/hampi.git
-
+    - Use ```git commit -m "reasons"``` to commit changes
+    - Use ```git add <filename>``` to add new files
+    - Use git push to upload to github
+---
+## JS8Call
+- ```sudo apt install libgfortran3 libqt5multimedia5 libqt5multimedia5-plugins libqt5multimediagsttools5 libqt5multimediaquick5 libqt5multimediawidgets5 libqt5qml5 libqt5quick5```
+- ```wget http://files.js8call.com/2.2.0/js8call_2.2.0_armhf.deb```
+- ```sudo dpkg -i js8call_2.2.0_armhf.deb```
+---
 
