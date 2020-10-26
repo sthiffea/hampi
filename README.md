@@ -1,4 +1,4 @@
-# aThis is how I build my Raspberry Pi 4 for ham use:
+# This is how I build my Raspberry Pi 4 for ham use:
 
 ## Flash Raspbian Image
 
@@ -61,3 +61,10 @@
     - Restart
 - Preference, Screen configuration, use full screen resolution
 - In RealVNC menu, under Licensing... configure cloud connection
+---
+## Git
+- ```git config user.name "Simon"```\
+```git config user.email "stiffo@gmail.com"```
+- git clone https://github.com/sthiffea/hampi.git
+
+
