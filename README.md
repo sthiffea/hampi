@@ -1,4 +1,4 @@
-# aThis is how I build my Raspberry Pi 4 for ham use:
+# This is how I build my Raspberry Pi 4 for ham use:
 
 ## Flash Raspbian Image
 
@@ -63,8 +63,8 @@
 - In RealVNC menu, under Licensing... configure cloud connection
 ---
 ## Git
-- ```git config user.name "Simon"```\
-```git config user.email "stiffo@gmail.com"```
+- ```git config --global user.name "Simon"```\
+```git config --global user.email "stiffo@gmail.com"```
 - git clone https://github.com/sthiffea/hampi.git
 
 
