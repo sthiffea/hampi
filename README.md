@@ -8,4 +8,14 @@ Kernel version:5.4
 Size:2531 MB
 2020-08-20-raspios-buster-armhf-full.zip
 
+Add this file to boot partition:
+wpa_supplicant.conf
 
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=CA
+
+network={
+ ssid="candy"
+ psk="###################"
+}
