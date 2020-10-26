@@ -75,6 +75,7 @@
 ---
 ## FLRig
 - ```sudo apt-get install -y flrig```
+![flrig-config](flrig.png)
 ---
 ## JS8Call
 - ```sudo apt install libgfortran3 libqt5multimedia5 libqt5multimedia5-plugins libqt5multimediagsttools5 libqt5multimediaquick5 libqt5multimediawidgets5 libqt5qml5 libqt5quick5```
