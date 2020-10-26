@@ -75,11 +75,17 @@
 ---
 ## FLRig
 - ```sudo apt-get install -y flrig```
-![flrig-config](flrig.png)
+- Config\
+    ![flrig-config](flrig.png)
 ---
 ## JS8Call
 - ```sudo apt install libgfortran3 libqt5multimedia5 libqt5multimedia5-plugins libqt5multimediagsttools5 libqt5multimediaquick5 libqt5multimediawidgets5 libqt5qml5 libqt5quick5```
 - ```wget http://files.js8call.com/2.2.0/js8call_2.2.0_armhf.deb```
 - ```sudo dpkg -i js8call_2.2.0_armhf.deb```
+- Config\
+    ![js8call](js8call.png)\
+    ![js8call-radio](js8call-radio.png)\
+    ![js8call-sound](js8call-sound.png)\
+    ![js8call-reply](js8call-reply.png)
 ---
 
