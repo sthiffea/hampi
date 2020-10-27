@@ -72,7 +72,7 @@
 ---
 ## Stuff
 - Set background to the image in hampi
-- ```sudo apt install pavucontrol``
+- ```sudo apt install pavucontrol```
 - reboot
 ---
 ## GPS
