@@ -146,12 +146,7 @@
 
 
 ---
-## FLRig
-- ```sudo apt-get install -y flrig```
-- Config\
-    ![flrig-config](flrig.png)
----
-## Fldigi
+## Fldigi & Flrig & Hamlib
 - Install requirements:
     ```
     sudo apt-get install libfltk1.3-dev libjpeg9-dev libxft-dev libxinerama-dev libxcursor-dev libsndfile1-dev libsamplerate0-dev portaudio19-dev libusb-1.0-0-dev libpulse-dev texinfo
@@ -191,13 +186,16 @@
     make
     sudo make install
     sudo ldconfig
-- ```wget http://www.w1hkj.com/files/fldigi/fldigi-4.1.15.tar.gz```
-- ```tar zxvf fldigi-4.1.15.tar.gz```
-- ```cd fldigi-4.1.15```
-- ```./configure --enable-static```
-- ```make```
-- ```sudo make install```
-- ```sudo ldconfig```
+- Install fldigi:
+    ```
+    cd ~/Downloads
+    wget http://www.w1hkj.com/files/fldigi/fldigi-4.1.15.tar.gz
+    tar zvf fldigi-4.1.15.tar.gz
+    cd fldigi-4.1.15
+    ./configure --enable-static
+    make
+    sudo make install
+    sudo ldconfig
 ---
 ## JS8Call
 - ```sudo apt install libgfortran3 libqt5multimedia5 libqt5multimedia5-plugins libqt5multimediagsttools5 libqt5multimediaquick5 libqt5multimediawidgets5 libqt5qml5 libqt5quick5```
@@ -208,10 +206,6 @@
     ![js8call-radio](js8call-radio.png)\
     ![js8call-sound](js8call-sound.png)\
     ![js8call-reply](js8call-reply.png)
----
-## Hamlib
-- ```sudo apt install libhamlib-utils```
-
 ---
 ## Conky
 - ```sudo apt install -y conky```
