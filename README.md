@@ -152,7 +152,45 @@
     ![flrig-config](flrig.png)
 ---
 ## Fldigi
-- ```cd Downloads```
+- Install requirements:
+    ```
+    sudo apt-get install libfltk1.3-dev libjpeg9-dev libxft-dev libxinerama-dev libxcursor-dev libsndfile1-dev libsamplerate0-dev portaudio19-dev libusb-1.0-0-dev libpulse-dev texinfo
+    ```
+- Install flxmlrpc:
+    ```
+    cd Downloads
+    wget http://www.w1hkj.com/files/flxmlrpc/flxmlrpc-0.1.4.tar.gz
+    tar zxvf flxmlrpc-0.1.4.tar.gz
+    cd flxmlrpc-0.1.4
+    ./configure --enable-static
+    make
+    sudo make install
+    sudo ldconfig
+    ```
+- Install hamlib:
+    ```
+    cd ~/Downloads
+    sudo apt remove libhamlib2
+    wget https://sourceforge.net/projects/hamlib/files/hamlib/3.3/hamlib-3.3.tar.gz/download -O hamlib-3.3.tar.gz
+    tar zxvf hamlib-3.3.tar.gz
+    cd hamlib-3.3
+    ./configure --enable-static
+    make
+    sudo make install
+    sudo ldconfig
+    ```
+- Install flrig:
+    ```
+    cd ~/Downloads
+    sudo apt remove flrig
+    sudo apt autoremove
+    wget http://www.w1hkj.com/files/flrig/flrig-1.3.51.tar.gz
+    tar zvf flrig-1.3.51.tar.gz
+    cd flrig-1.3.51
+    ./configure --enable-static
+    make
+    sudo make install
+    sudo ldconfig
 - ```wget http://www.w1hkj.com/files/fldigi/fldigi-4.1.15.tar.gz```
 - ```tar zxvf fldigi-4.1.15.tar.gz```
 - ```cd fldigi-4.1.15```
@@ -171,9 +209,24 @@
     ![js8call-sound](js8call-sound.png)\
     ![js8call-reply](js8call-reply.png)
 ---
+## Hamlib
+- ```sudo apt install libhamlib-utils```
+
+---
 ## Conky
 - ```sudo apt install -y conky```
 - ```cd```
-- ```ln -sf hampi/conkyrc
----
+- ```ln -sf hampi/conkyrc .conkyrc```
+- ```sudo apt install -y ruby2.3```
+- ```sudo gem install gpsd_client```
+- ```sudo gem install maidenhead```
+- ```mkdir .config/autostart```
+- ```vi .config/autostart/.desktop```
+    ```
+    [Desktop Entry] 
 
+    Type=Application
+
+    Exec=conky
+    ```
+- Reboot
