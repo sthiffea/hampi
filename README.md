@@ -207,6 +207,23 @@
     ![js8call-sound](js8call-sound.png)\
     ![js8call-reply](js8call-reply.png)
 ---
+## pat.io
+- Install it
+    ```
+    wget https://github.com/la5nta/pat/releases/download/v0.10.0/pat_0.10.0_linux_armhf.deb
+    sudo dpkg -i pat_0.10.0_linux_armhf.deb
+    ```
+- Run ```pat configure```
+    ```
+    "mycall": "VE2TFZ",
+    "secure_login_password": "WINLINKPASSWORD",
+    "locator": "FN35gj",
+    "http_addr": "0.0.0.0:8080",
+    ```
+    
+
+
+---
 ## Conky
 - ```sudo apt install -y conky```
 - ```cd```
