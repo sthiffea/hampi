@@ -217,10 +217,29 @@
     ```
     "mycall": "VE2TFZ",
     "secure_login_password": "WINLINKPASSWORD",
+
     "locator": "FN35gj",
+
     "http_addr": "0.0.0.0:8080",
+
+    "hamlib_rigs": {
+      "ic718": {"address": "localhost:4532", "network": "tcp"}
+    },
+
+    "ardop": {
+      "rig": "ic718",
     ```
-    
+- Binary files are in hampi/bin:\
+    https://www.cantab.net/users/john.wiseman/Downloads/Beta/piardopc
+    ```
+    pi@hampi:~/hampi/bin $ arecord -l
+    **** List of CAPTURE Hardware Devices ****
+    card 2: CODEC [USB Audio CODEC], device 0: USB Audio [USB Audio]
+      Subdevices: 1/1
+      Subdevice #0: subdevice #0
+    ```
+- ```./piar```
+
 
 
 ---
