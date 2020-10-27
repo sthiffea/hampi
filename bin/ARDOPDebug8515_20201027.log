@@ -1,0 +1,302 @@
+12:05:56.544 ARDOPC Version 1.0.4.1j-BPQ
+12:05:56.544 ARDOPC listening on port 8515
+12:05:56.544 Capture Devices
+
+12:05:56.547 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:05:56.547 
+12:05:56.547 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:05:56.547 
+12:05:56.547 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:05:56.547   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:05:56.548     1..2 channels, sampling rate 8000..48000 Hz
+12:05:56.548 
+12:05:56.549 Playback Devices
+
+12:05:56.549 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:05:56.549   Device hw:0,0 ID `bcm2835 HDMI 1', name `bcm2835 HDMI 1', 4 subdevices (4 available)
+12:05:56.550     1..2 channels, sampling rate 8000..192000 Hz
+12:05:56.550 
+12:05:56.550 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:05:56.550   Device hw:1,0 ID `bcm2835 Headphones', name `bcm2835 Headphones', 4 subdevices (4 available)
+12:05:56.551     1..2 channels, sampling rate 8000..192000 Hz
+12:05:56.551 
+12:05:56.551 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:05:56.551   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:05:56.552     1..2 channels, sampling rate 32000..48000 Hz
+12:05:56.552 
+12:05:56.553 Opening Playback Device ARDOP Rate 12000
+12:05:56.553 cannot open playback audio device ARDOP (No such file or directory)
+12:05:56.553 ARDOPC listening on port 8515
+12:06:24.681 ARDOPC Version 1.0.4.1j-BPQ
+12:06:24.681 ARDOPC listening on port 8515
+12:06:24.681 Capture Devices
+
+12:06:24.685 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:06:24.685 
+12:06:24.685 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:06:24.685 
+12:06:24.686 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:06:24.686   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:06:24.686     1..2 channels, sampling rate 8000..48000 Hz
+12:06:24.686 
+12:06:24.688 Playback Devices
+
+12:06:24.689 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:06:24.689   Device hw:0,0 ID `bcm2835 HDMI 1', name `bcm2835 HDMI 1', 4 subdevices (4 available)
+12:06:24.689     1..2 channels, sampling rate 8000..192000 Hz
+12:06:24.690 
+12:06:24.690 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:06:24.690   Device hw:1,0 ID `bcm2835 Headphones', name `bcm2835 Headphones', 4 subdevices (4 available)
+12:06:24.691     1..2 channels, sampling rate 8000..192000 Hz
+12:06:24.692 
+12:06:24.692 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:06:24.692   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:06:24.693     1..2 channels, sampling rate 32000..48000 Hz
+12:06:24.693 
+12:06:24.695 Opening Playback Device ARDOP Rate 12000
+12:06:24.695 cannot open playback audio device ARDOP (No such file or directory)
+12:06:24.695 ARDOPC listening on port 8515
+12:08:51.056 ARDOPC Version 1.0.4.1j-BPQ
+12:08:51.056 ARDOPC listening on port 8515
+12:08:51.057 Capture Devices
+
+12:08:51.058 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:08:51.058 
+12:08:51.058 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:08:51.058 
+12:08:51.058 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:08:51.058   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:08:51.059     1..2 channels, sampling rate 8000..48000 Hz
+12:08:51.059 
+12:08:51.060 Playback Devices
+
+12:08:51.060 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:08:51.060   Device hw:0,0 ID `bcm2835 HDMI 1', name `bcm2835 HDMI 1', 4 subdevices (4 available)
+12:08:51.060     1..2 channels, sampling rate 8000..192000 Hz
+12:08:51.060 
+12:08:51.060 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:08:51.060   Device hw:1,0 ID `bcm2835 Headphones', name `bcm2835 Headphones', 4 subdevices (4 available)
+12:08:51.061     1..2 channels, sampling rate 8000..192000 Hz
+12:08:51.061 
+12:08:51.061 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:08:51.061   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:08:51.061     1..2 channels, sampling rate 32000..48000 Hz
+12:08:51.061 
+12:08:51.062 Opening Playback Device plughw:2,0 Rate 12000
+12:08:51.096 Opening Capture Device plughw:2,0 Rate 12000
+12:08:51.209 ARDOPC listening on port 8515
+12:09:01.120 Input peaks = -791, 1261
+12:09:11.180 Input peaks = -749, 1320
+12:09:21.241 Input peaks = -712, 1108
+12:09:31.300 Input peaks = -700, 1203
+12:09:41.381 Input peaks = -873, 1160
+12:09:44.329 Prior-Offset= -1.898801
+12:09:44.423 EnvelopeCorrelator CorMax:MaxProd= 57.657635  J= 319
+12:09:44.424 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 1
+12:09:44.722 Frame Decode type 37 fc 3 Dist 0.57 0.49 0.49 Sess ff pend 0 conn 0 lastsess 0
+12:09:44.722 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -11.496025 dB, Full -14.121050 dB, Offset= 12.336690 Hz:  MD Decode;5 Type1=H37, Type2=HFC, D1= 0.57, D2= 0.49
+12:09:44.722 poor frame type decode
+12:09:51.441 Input peaks = -810, 1254
+12:10:01.502 Input peaks = -806, 1256
+12:10:11.561 Input peaks = -804, 1234
+12:10:21.611 Input peaks = -820, 1201
+12:10:31.671 Input peaks = -797, 1258
+12:10:41.732 Input peaks = -767, 1195
+12:10:51.790 Input peaks = -803, 1242
+12:11:01.851 Input peaks = -769, 1250
+12:11:11.911 Input peaks = -805, 1198
+12:11:17.780 Prior-Offset= 0.491982
+12:11:17.881 EnvelopeCorrelator CorMax:MaxProd= 54.597080  J= 356
+12:11:17.881 [Acquire2ToneLeaderSymbolFraming] intIatMinError= -1
+12:11:18.174 Frame Decode type 17 4d 42 Dist 0.54 0.60 0.55 Sess ff pend 0 conn 0 lastsess 0
+12:11:18.174 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -12.943903 dB, Full -11.516800 dB, Offset= -88.827332 Hz:  MD Decode;5 Type1=H17, Type2=H4D, D1= 0.54, D2= 0.60
+12:11:18.174 poor frame type decode
+12:11:21.971 Input peaks = -803, 1284
+12:11:32.019 Input peaks = -781, 1282
+12:11:42.080 Input peaks = -756, 1224
+12:11:52.140 Input peaks = -801, 1270
+12:12:02.199 Input peaks = -799, 1274
+12:12:12.260 Input peaks = -838, 1251
+12:12:22.320 Input peaks = -814, 1311
+12:12:32.380 Input peaks = -792, 1352
+12:12:42.430 Input peaks = -786, 1388
+12:12:52.490 Input peaks = -784, 1248
+12:13:02.550 Input peaks = -802, 1262
+12:13:12.609 Input peaks = -880, 1251
+12:13:22.669 Input peaks = -792, 1305
+12:13:29.872 Prior-Offset= 0.193901
+12:13:29.971 EnvelopeCorrelator CorMax:MaxProd= 55.678848  J= 74
+12:13:29.971 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 0
+12:13:30.876 frame sync timeout 279820
+12:13:32.730 Input peaks = -780, 1280
+12:13:42.789 Input peaks = -835, 1280
+12:13:52.839 Input peaks = -801, 1218
+12:13:58.697 Prior-Offset= 1.969101
+12:13:58.794 EnvelopeCorrelator CorMax:MaxProd= 62.454659  J= 85
+12:13:58.794 [Acquire2ToneLeaderSymbolFraming] intIatMinError= -1
+12:13:58.995 Frame Decode type 55 a 55 Dist 0.22 0.44 0.39 Sess ff pend 0 conn 0 lastsess 0
+12:13:58.996 [Frame Type Decode OK  ] Ldr; S:N(3KHz) Early= -13.035564 dB, Full -12.918041 dB, Offset= 89.390457 Hz:  MD Decode;3 ID=HFF, Type=H55:16QAM.500.100.O, D1= 0.22, D2= 0.44
+12:13:58.996 New frame type - MEMARQ flags reset
+12:13:58.996 MEMARQ Flags 0 0 0 0 0 0 0 0
+12:14:02.899 Input peaks = -773, 1228
+12:14:03.063 [CorrectRawDataWithRS] RS Says Can't Correct
+12:14:03.066 [CorrectRawDataWithRS] RS says ok but CRC still bad
+12:14:03.066 Qual = 6
+12:14:03.066 DecodeFrame MEMARQ Flags 0 0 0 0 0 0 0 0
+12:14:03.066 [DecodeFrame] Frame: 16QAM.500.100.O Decode FAIL,   Constellation Quality= 6
+12:14:03.066 Time since received = 69
+12:38:50.829 ARDOPC Version 1.0.4.1j-BPQ
+12:38:50.831 ARDOPC listening on port 8515
+12:38:50.831 Capture Devices
+
+12:38:50.836 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:38:50.836 
+12:38:50.836 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:38:50.836 
+12:38:50.836 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:38:50.837   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:38:50.837     1..2 channels, sampling rate 8000..48000 Hz
+12:38:50.837 
+12:38:50.839 Playback Devices
+
+12:38:50.840 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:38:50.840   Device hw:0,0 ID `bcm2835 HDMI 1', name `bcm2835 HDMI 1', 4 subdevices (4 available)
+12:38:50.841     1..2 channels, sampling rate 8000..192000 Hz
+12:38:50.841 
+12:38:50.841 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:38:50.841   Device hw:1,0 ID `bcm2835 Headphones', name `bcm2835 Headphones', 4 subdevices (4 available)
+12:38:50.842     1..2 channels, sampling rate 8000..192000 Hz
+12:38:50.842 
+12:38:50.843 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:38:50.843   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:38:50.843     1..2 channels, sampling rate 32000..48000 Hz
+12:38:50.843 
+12:38:50.845 Opening Playback Device plughw:2,0 Rate 12000
+12:38:50.877 Opening Capture Device plughw:2,0 Rate 12000
+12:38:50.994 ARDOPC listening on port 8515
+12:39:00.885 Input peaks = -749, 1220
+12:39:10.944 Input peaks = -757, 1303
+12:39:14.242 Prior-Offset= 2.121065
+12:39:14.350 EnvelopeCorrelator CorMax:MaxProd= 64.968658  J= 123
+12:39:14.350 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 1
+12:39:14.841 Frame Decode type 4d e7 38 Dist 0.59 0.58 0.48 Sess ff pend 0 conn 0 lastsess 0
+12:39:14.841 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -15.242010 dB, Full -11.446817 dB, Offset= -24.016680 Hz:  MD Decode;5 Type1=H4D, Type2=HE7, D1= 0.59, D2= 0.58
+12:39:14.841 poor frame type decode
+12:39:21.004 Input peaks = -749, 1206
+12:39:31.065 Input peaks = -794, 1254
+12:39:41.125 Input peaks = -769, 1233
+12:39:51.184 Input peaks = -869, 1459
+12:40:01.234 Input peaks = -822, 1219
+12:40:11.294 Input peaks = -745, 1330
+12:40:18.135 Prior-Offset= 0.102257
+12:40:18.232 EnvelopeCorrelator CorMax:MaxProd= 60.863197  J= 1
+12:40:18.232 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 2
+12:40:18.529 Frame Decode type 41 ea 15 Dist 0.47 0.41 0.41 Sess ff pend 0 conn 0 lastsess 0
+12:40:18.529 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -11.892790 dB, Full -12.438066 dB, Offset= -27.863350 Hz:  MD Decode;5 Type1=H41, Type2=HEA, D1= 0.47, D2= 0.41
+12:40:18.529 poor frame type decode
+12:40:20.355 Prior-Offset= 0.473949
+12:40:20.452 EnvelopeCorrelator CorMax:MaxProd= 66.254105  J= 186
+12:40:20.453 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 2
+12:40:20.651 Frame Decode type 55 e2 1d Dist 0.55 0.55 0.55 Sess ff pend 0 conn 0 lastsess 0
+12:40:20.651 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -11.667851 dB, Full -9.628705 dB, Offset= -41.828503 Hz:  MD Decode;5 Type1=H55, Type2=HE2, D1= 0.55, D2= 0.55
+12:40:20.651 poor frame type decode
+12:40:21.355 Input peaks = -839, 1248
+12:41:15.235 ARDOPC Version 1.0.4.1j-BPQ
+12:41:15.235 ARDOPC listening on port 8515
+12:41:15.235 Capture Devices
+
+12:41:15.237 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:41:15.237 
+12:41:15.237 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:41:15.237 
+12:41:15.238 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:41:15.238   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:41:15.238     1..2 channels, sampling rate 8000..48000 Hz
+12:41:15.238 
+12:41:15.239 Playback Devices
+
+12:41:15.239 Card 0, ID `b1', name `bcm2835 HDMI 1'
+12:41:15.239   Device hw:0,0 ID `bcm2835 HDMI 1', name `bcm2835 HDMI 1', 4 subdevices (4 available)
+12:41:15.240     1..2 channels, sampling rate 8000..192000 Hz
+12:41:15.240 
+12:41:15.240 Card 1, ID `Headphones', name `bcm2835 Headphones'
+12:41:15.240   Device hw:1,0 ID `bcm2835 Headphones', name `bcm2835 Headphones', 4 subdevices (4 available)
+12:41:15.241     1..2 channels, sampling rate 8000..192000 Hz
+12:41:15.241 
+12:41:15.241 Card 2, ID `CODEC', name `USB Audio CODEC'
+12:41:15.241   Device hw:2,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+12:41:15.242     1..2 channels, sampling rate 32000..48000 Hz
+12:41:15.242 
+12:41:15.242 Opening Playback Device plughw:2,0 Rate 12000
+12:41:15.265 Opening Capture Device plughw:2,0 Rate 12000
+12:41:15.378 ARDOPC listening on port 8515
+12:41:19.060 Prior-Offset= -0.052742
+12:41:19.169 EnvelopeCorrelator CorMax:MaxProd= 59.652512  J= 354
+12:41:19.170 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 2
+12:41:19.764 Frame Decode type 55 ee 55 Dist 0.34 0.44 0.14 Sess ff pend 0 conn 0 lastsess 0
+12:41:19.764 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -12.401711 dB, Full -14.192561 dB, Offset= -37.886326 Hz:  MD Decode;5 Type1=H55, Type2=HEE, D1= 0.34, D2= 0.44
+12:41:19.764 poor frame type decode
+12:41:19.904 Prior-Offset= 0.563671
+12:41:20.011 EnvelopeCorrelator CorMax:MaxProd= 58.995808  J= 147
+12:41:20.011 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 0
+12:41:20.810 Frame Decode type e9 4b 55 Dist 0.57 0.47 0.47 Sess ff pend 0 conn 0 lastsess 0
+12:41:20.810 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -12.640331 dB, Full -10.451520 dB, Offset= -61.985115 Hz:  MD Decode;5 Type1=HE9, Type2=H4B, D1= 0.57, D2= 0.47
+12:41:20.810 poor frame type decode
+12:41:22.369 Prior-Offset= 0.876629
+12:41:22.468 EnvelopeCorrelator CorMax:MaxProd= 51.012875  J= 2
+12:41:22.468 [Acquire2ToneLeaderSymbolFraming] intIatMinError= -1
+12:41:22.665 Frame Decode type 55 ff 40 Dist 0.39 0.57 0.53 Sess ff pend 0 conn 0 lastsess 0
+12:41:22.665 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -12.169048 dB, Full -14.969415 dB, Offset= -34.142197 Hz:  MD Decode;5 Type1=H55, Type2=HFF, D1= 0.39, D2= 0.57
+12:41:22.665 poor frame type decode
+12:41:25.288 Input peaks = -838, 1367
+12:41:28.974 GUI Connected from Address 127.0.0.1
+12:41:32.650 Prior-Offset= 2.294331
+12:41:32.748 EnvelopeCorrelator CorMax:MaxProd= 50.114891  J= 85
+12:41:32.748 [Acquire2ToneLeaderSymbolFraming] intIatMinError= -2
+12:41:32.952 Frame Decode type 70 53 24 Dist 0.50 0.38 0.50 Sess ff pend 0 conn 0 lastsess 0
+12:41:32.952 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -15.503406 dB, Full -15.203587 dB, Offset= 36.459091 Hz:  MD Decode;5 Type1=H70, Type2=H53, D1= 0.50, D2= 0.38
+12:41:32.952 poor frame type decode
+12:41:35.349 Input peaks = -783, 1431
+12:41:45.409 Input peaks = -793, 1189
+12:41:55.469 Input peaks = -768, 1363
+12:41:57.349 Prior-Offset= -0.404659
+12:41:57.459 EnvelopeCorrelator CorMax:MaxProd= 60.435452  J= 192
+12:41:57.459 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 2
+12:41:57.946 Frame Decode type 55 55 65 Dist 0.38 0.47 0.51 Sess ff pend 0 conn 0 lastsess 0
+12:41:57.946 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -15.572396 dB, Full -10.668190 dB, Offset= -54.979668 Hz:  MD Decode;5 Type1=H55, Type2=H55, D1= 0.38, D2= 0.47
+12:41:57.946 poor frame type decode
+12:41:58.073 Prior-Offset= 0.288113
+12:41:58.170 EnvelopeCorrelator CorMax:MaxProd= 57.877537  J= 3
+12:41:58.170 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 1
+12:41:58.874 Frame Decode type 64 f3 c Dist 0.55 0.56 0.56 Sess ff pend 0 conn 0 lastsess 0
+12:41:58.874 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -7.502284 dB, Full -4.333775 dB, Offset= -31.770563 Hz:  MD Decode;5 Type1=H64, Type2=HF3, D1= 0.55, D2= 0.56
+12:41:58.874 poor frame type decode
+12:42:01.230 Prior-Offset= -2.801132
+12:42:01.329 EnvelopeCorrelator CorMax:MaxProd= 60.196312  J= 2
+12:42:01.329 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 0
+12:42:01.529 Frame Decode type 16 11 ee Dist 0.43 0.51 0.51 Sess ff pend 0 conn 0 lastsess 0
+12:42:01.529 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -13.928337 dB, Full -14.075474 dB, Offset= 34.495365 Hz:  MD Decode;5 Type1=H16, Type2=H11, D1= 0.43, D2= 0.51
+12:42:01.530 poor frame type decode
+12:42:05.529 Input peaks = -823, 1272
+12:42:15.590 Input peaks = -781, 1430
+12:42:24.932 GUI Connection lost
+12:42:25.648 Input peaks = -734, 1357
+12:42:34.299 GUI Connected from Address 127.0.0.1
+12:42:35.698 Input peaks = -836, 1307
+12:42:45.758 Input peaks = -845, 1463
+12:42:49.302 GUI Connection lost
+12:42:55.818 Input peaks = -793, 1185
+12:43:05.878 Input peaks = -882, 1254
+12:43:15.938 Input peaks = -800, 1204
+12:43:16.463 Prior-Offset= 1.336433
+12:43:16.560 EnvelopeCorrelator CorMax:MaxProd= 55.063305  J= 51
+12:43:16.560 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 0
+12:43:16.761 Frame Decode type e2 e8 17 Dist 0.62 0.51 0.51 Sess ff pend 0 conn 0 lastsess 0
+12:43:16.761 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -14.745367 dB, Full -13.215406 dB, Offset= 69.878960 Hz:  MD Decode;5 Type1=HE2, Type2=HE8, D1= 0.62, D2= 0.51
+12:43:16.761 poor frame type decode
+12:43:19.142 Prior-Offset= 1.239075
+12:43:19.239 EnvelopeCorrelator CorMax:MaxProd= 68.689728  J= 265
+12:43:19.239 [Acquire2ToneLeaderSymbolFraming] intIatMinError= 1
+12:43:19.545 Frame Decode type eb 7b 47 Dist 0.54 0.49 0.56 Sess ff pend 0 conn 0 lastsess 0
+12:43:19.545 [Frame Type Decode Fail] Ldr; S:N(3KHz) Early= -13.742504 dB, Full -15.408522 dB, Offset= 82.039940 Hz:  MD Decode;5 Type1=HEB, Type2=H7B, D1= 0.54, D2= 0.49
+12:43:19.545 poor frame type decode
