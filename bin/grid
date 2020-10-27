@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GRID=$($HOME/bin/get-grid)
+GRID=$($HOME/hampi/bin/get-grid)
 GRIDCH=$(echo $GRID | grep -i JJ00)
 
 if [ -z "$GRIDCH" ]
