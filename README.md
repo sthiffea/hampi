@@ -72,6 +72,8 @@
 ---
 ## Stuff
 - Set background to the image in hampi
+- ```sudo apt install pavucontrol``
+- reboot
 ---
 ## GPS
 - ```sudo apt -y install gpsd gpsd-clients python-gps chrony```
@@ -237,8 +239,15 @@
     card 2: CODEC [USB Audio CODEC], device 0: USB Audio [USB Audio]
       Subdevices: 1/1
       Subdevice #0: subdevice #0
+
+- Install patmenu2
     ```
-- ```./piar```
+    cd ~
+    git clone https://github.com/km4ack/patmenu2.git $HOME/patmenu2
+    bash $HOME/patmenu2/setup
+
+    ```
+
 
 
 
