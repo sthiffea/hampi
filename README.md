@@ -73,10 +73,93 @@
 ## Stuff
 - Set background to the image in hampi
 ---
+## GPS
+- ```sudo apt -y install gpsd gpsd-clients python-gps chrony```
+- ```ls -l /dev/serial/by-id```
+    ```
+    total 0
+    lrwxrwxrwx 1 root root 13 Oct 26 19:18 usb-1a86_USB2.0-Serial-if00-port0 -> ../../ttyUSB0
+    lrwxrwxrwx 1 root root 13 Oct 26 19:18 usb-u-blox_AG_-_www.u-blox.com_u-blox_7_-_GPS_GNSS_Receiver-if00 -> ../../ttyACM0
+    ```
+- ```sudo vi /etc/default/gpsd```
+- Make / change to following setting:
+    ```
+    START_DAEMON=”true”
+    USBAUTO=”true”
+    DEVICES=”/dev/ttyACM0″
+    GPSD_OPTIONS=”-n”
+    ```
+- ```sudo vi /etc/chrony/chrony.conf```
+- Add the following line to the end of the file:
+    ```
+    refclock SHM 0 offset 0.5 delay 0.2 refid NMEA
+    ```
+- Reboot
+- Check that gpsd and chronyd are active
+    ```
+    systemctl is-active gpsd
+    systemctl is-active chronyd
+    systemctl status gpsd
+    ```
+- Show the gps data:
+    ```
+    gpsmon -n
+    cgps
+    xgps
+    ```
+---
+## Real Time Clock
+- Enable i2c:
+    - ```sudo raspi-config```
+    - Enable i2c under Interfacing Options
+- Check it is detected:
+    ```
+    pi@hampi:~ $ sudo i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+    00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+    10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- --
+    70: -- -- -- -- -- -- -- --
+    ```
+- ```sudo modprobe rtc-ds1307```
+- ```
+    sudo su -
+    echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
+    ```
+- ```
+    sudo hwclock -r
+    date
+    sudo hwclock -w
+    sudo hwclock -r
+    ```
+- Add ```rtc-ds1307``` to ```/etc/modules```
+- Add script to start RTC in ```sudo vi /etc/rc.local```
+    ```
+    echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
+    sudo hwclock -s
+    date
+    ```
+
+
+---
 ## FLRig
 - ```sudo apt-get install -y flrig```
 - Config\
     ![flrig-config](flrig.png)
+---
+## Fldigi
+- ```cd Downloads```
+- ```wget http://www.w1hkj.com/files/fldigi/fldigi-4.1.15.tar.gz```
+- ```tar zxvf fldigi-4.1.15.tar.gz```
+- ```cd fldigi-4.1.15```
+- ```./configure --enable-static```
+- ```make```
+- ```sudo make install```
+- ```sudo ldconfig```
 ---
 ## JS8Call
 - ```sudo apt install libgfortran3 libqt5multimedia5 libqt5multimedia5-plugins libqt5multimediagsttools5 libqt5multimediaquick5 libqt5multimediawidgets5 libqt5qml5 libqt5quick5```
@@ -87,5 +170,10 @@
     ![js8call-radio](js8call-radio.png)\
     ![js8call-sound](js8call-sound.png)\
     ![js8call-reply](js8call-reply.png)
+---
+## Conky
+- ```sudo apt install -y conky```
+- ```cd```
+- ```ln -sf hampi/conkyrc
 ---
 
