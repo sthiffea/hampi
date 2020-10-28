@@ -113,13 +113,13 @@
     ```
 - Add to ```sudo vi /etc/dnsmasq.conf```
     ```
-    #AutoHotspot config
+    #AutoHotspot Config
+    #stop DNSmasq from using resolv.conf
+    no-resolv
+    #Interface to use
     interface=wlan0
-    bind-dynamic 
-    server=8.8.8.8
-    domain-needed
-    bogus-priv
-    dhcp-range=192.168.50.150,192.168.50.200,12h
+    bind-interfaces
+    dhcp-range=10.0.0.50,10.0.0.150,12h
     ```
 - ```sudo vi /etc/network/interfaces``` shoud be:
     ```
@@ -128,10 +128,6 @@
     # For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'
     # Include files from /etc/network/interfaces.d:
     source-directory /etc/network/interfaces.d
-    ```
-- ```sudo vi /etc/sysctl.conf``` uncomment:
-    ```
-    net.ipv4.ip_forward=1
     ```
 - ```sudo vi /etc/dhcpcd.conf``` add at the bottom:
     ```
@@ -145,7 +141,7 @@
     [Service]
     Type=oneshot
     RemainAfterExit=yes
-    ExecStart=/usr/bin/autohotspotN
+    ExecStart=/usr/bin/autohotspot
     [Install]
     WantedBy=multi-user.target
     ```
@@ -153,20 +149,17 @@
 - ```sudo vi /usr/bin/autohotspotN```
     ```
     #!/bin/bash
-    #version 0.961-N/HS-I
+    #version 0.961-N/HS
 
     #You may share this script on the condition a reference to RaspberryConnect.com 
     #must be included in copies or derivatives of this script. 
 
-    #Network Wifi & Hotspot with Internet
-    #A script to switch between a wifi network and an Internet routed Hotspot
-    #A Raspberry Pi with a network port required for Internet in hotspot mode.
+    #A script to switch between a wifi network and a non internet routed Hotspot
     #Works at startup or with a seperate timer or manually without a reboot
     #Other setup required find out more at
     #http://www.raspberryconnect.com
 
     wifidev="wlan0" #device name to use. Default is wlan0.
-    ethdev="eth0" #Ethernet port to use with IP tables
     #use the command: iw dev ,to see wifi interface name 
 
     IFSdef=$IFS
@@ -193,15 +186,11 @@
     {
         echo "Creating Hotspot"
         ip link set dev "$wifidev" down
-        ip a add 192.168.50.5/24 brd + dev "$wifidev"
+        ip a add 10.0.0.5/24 brd + dev "$wifidev"
         ip link set dev "$wifidev" up
         dhcpcd -k "$wifidev" >/dev/null 2>&1
-        iptables -t nat -A POSTROUTING -o "$ethdev" -j MASQUERADE
-        iptables -A FORWARD -i "$ethdev" -o "$wifidev" -m state --state RELATED,ESTABLISHED -j ACCEPT
-        iptables -A FORWARD -i "$wifidev" -o "$ethdev" -j ACCEPT
         systemctl start dnsmasq
         systemctl start hostapd
-        echo 1 > /proc/sys/net/ipv4/ip_forward
     }
 
     KillHotspot()
@@ -210,9 +199,6 @@
         ip link set dev "$wifidev" down
         systemctl stop hostapd
         systemctl stop dnsmasq
-        iptables -D FORWARD -i "$ethdev" -o "$wifidev" -m state --state RELATED,ESTABLISHED -j ACCEPT
-        iptables -D FORWARD -i "$wifidev" -o "$ethdev" -j ACCEPT
-        echo 0 > /proc/sys/net/ipv4/ip_forward
         ip addr flush dev "$wifidev"
         ip link set dev "$wifidev" up
         dhcpcd  -n "$wifidev" >/dev/null 2>&1
@@ -229,6 +215,7 @@
             createAdHocNetwork
         fi
     }
+
 
     chksys()
     {
@@ -322,9 +309,8 @@
     FindSSID
 
     #Create Hotspot or connect to valid wifi networks
-    if [ "$ssidChk" != "NoSSid" ]
+    if [ "$ssidChk" != "NoSSid" ] 
     then
-        echo 0 > /proc/sys/net/ipv4/ip_forward #deactivate ip forwarding
         if systemctl status hostapd | grep "(running)" >/dev/null 2>&1
         then #hotspot running and ssid in range
                 KillHotspot
@@ -354,7 +340,7 @@
         else #"No SSID, activating Hotspot"
                 createAdHocNetwork
         fi
-    fi
+    fi    
     ```
 - ```sudo chmod +x /usr/bin/autohotspotN```
 - Reboot
